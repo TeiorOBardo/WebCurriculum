@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>Curriculo Henrique</title>
+</head>
+<header id="top">
+    <section id="sidebar">
+        <button onclick="closeSidebar()">X</button>
+        <ul>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#apresentacao">Apresentação</a></li>
+            <li><a href="#dados">Dados Pessoais</a></li>
+            <li><a href="#formacao">Formação Acadêmica</a></li>
+            <li><a href="#conhecimentos">Conhecimentos Técnicos</a></li>
+            <li><a href="#experiencia">Experiência</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#idiomas">Idiomas</a></li>
+        </ul>
+    </section>
+    <nav class="navigation">
+        <ul>
+            <li><button onclick="openSidebar()"><img src="./imagens/menu.png" height="90px"></button></li>
+
+            <li class="center"><h1>Henrique Paes</h1>
+                <h3>Programador Júnior</h3></li>
+        </ul>
+    </nav>
+</header>
+<body onload="ajustSize()">
+    <main id="main">
+        <section class="info" id="apresentacao">
+            <h2>Apresentação</h2>
+            <h3>Olá, sou apaixonado por programação e tecnologia, tenho como foco principal o aprendizado, garanto os melhores resultados a longo prazo pois busco entender os processos e procuro melhora constante. Tenho interesse especial em desenvolvimento de sistemas complexos e escalonáveis.</h3>
+        </section>
+
+        <img src="./imagens/HP.jpg"  id="photo">
+
+        <section class="info" id="dados">
+            <!--<h2>Dados Pessoais</h2>
+            <h3> Henrique Paes de Oliveira </h3>
+            <h3>11/04/2008</h3>
+            <h3>hpaeso@gmail.com </h3>
+            <h3>(41) 998924204</h3>-->
+        </section>
+
+        <section class="info" id="formacao">
+            <h2>Formação Acadêmica</h2>
+            <details open>
+                <summary>Técnico em Programação de Jogos Digitais + Ensino médio</summary>
+                <h4>Instituto Federal de Educação, Ciência e Tecnologia do Paraná (IFPR) (2023-2026) </h4>
+            </details>
+            
+            <details open>
+                <summary>Treinamento intensivo de matemática Olímpica</summary>
+                <h4>Polos Olímpicos de Treinamento Intensivo (POTI, IMPA) (2023 - 2024) </h4>
+            </details>
+            
+            <details open>
+                <summary>Ensino fundamental</summary>
+                <h4>Colégio Integral (2014 - 2022) </h4>
+            </details>
+        </section>
+
+        <section class="info" id="conhecimentos">
+            <h2>Conhecimentos Técnicos</h2>
+            <h3>C#, C++, Python, JavaScript, Unity, Blender, HTML, CSS.</h3>
+            <h3>Game development, Front-end.</h3>
+        </section>
+
+        <section class="info" id="experiencia">
+            <h2>Experiência</h2>
+            <h3>Desenvolvimento de jogos eletrônicos 2D e 3D utilizando C#, Unity e Blender, sozinho ou em equipes diversas de 3 a 6 pessoas.</h3>
+            <h3>Competidor em diversas olimpíadas de matemática, com medalha de bronze e menções honrosas.</h3>
+        </section>
+
+        <section class="info" id="habilidades">
+            <h2>Habilidades</h2>
+            <h3>Paciência.</h3>
+            <h3>Perseverança.</h3>
+            <h3>Comunicação.</h3>
+            <h3>Trabalho em equipe.</h3>
+            <h3>Interesse por aprendizado.</h3>
+        </section>
+       
+        <section class="info" id="idiomas">
+            <h2>Idiomas</h2>
+            <h3 class="highlight">Inglês – fluente.</h3>
+            <h3>Português – nativo.</h3>
+            <h3>Francês – básico.</h3>
+        </section>
+
+    <section id="projetos-carousel">
+
+        <h1 class="carousel-title">
+            Projetos Desenvolvidos
+        </h1>
+
+        <div class="carousel-wrapper">
+
+            <button class="carousel-button left"
+                onclick="previousSlide()">
+                ❮
+            </button>
+
+            <div class="carousel-window">
+
+                <div class="carousel-track">
+
+                    <div class="carousel-card" data-desc="Jogo plataforma 2D com combate, inimigos, 2 fases e chefão final. Desenvolvido em um grupo de 4 alunos.">
+                        <img src="./imagens/projeto1.png">
+                        <div class="carousel-overlay">
+                            <h2>Sunlight</h2>
+                            <p>Unity • C# • 2D • Sistemas integrados</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-card" data-desc="Recriação fiel para web do jogo de Atari: Fishing Derby. Desenvolvido em uma equipe de dois membros.">
+                        <img src="./imagens/FishingDerby.png">
+                        <div class="carousel-overlay">
+                            <h2>Fishing Derby</h2>
+                            <p>Unity • C# • 2D • Sistemas integrados</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-card" data-desc="Escape room 3D, com enigmas integrados, desbloqueando novas regiões da fase. Desenvolvido em um grupo de 3 alunos.">
+                        <img src="./imagens/projeto2.png">
+                        <div class="carousel-overlay">
+                            <h2>Outro Prisioneiro</h2>
+                            <p>Unity • C# • 3D • Eventos</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-card" data-desc="Modelagem 3D desenvolvida a partir de uma captura de tela do modelo da professora.">
+                        <img src="./imagens/projeto3.png">
+                        <div class="carousel-overlay">
+                            <h2>Casa com torre</h2>
+                            <p>Blender • Modelagem 3D</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-card" data-desc="Projeto final do 1o ano do curso técnico. Implementação de ranking de performance com criptografia e hash de segurança.">
+                        <img src="./imagens/projeto4.png">
+                        <div class="carousel-overlay">
+                            <h2>Guerra de Canhões</h2>
+                            <p>C++ • Game Loop • Criptografia</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-card" data-desc="Primeiro jogo feito na íntegra. Cópia do jogo Pac Man, rodando no console, implementação de player e inimigos.">
+                        <img src="./imagens/projeto5.png">
+                        <div class="carousel-overlay">
+                            <h2>Pac Man</h2>
+                            <p>C++ • Game Loop</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-button right"
+                onclick="nextSlide()">
+                ❯
+            </button>
+        </div>
+    </section>
+
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modalTitle">Título do Projeto</h2>
+            <h4 id="modalTags">Tags do Projeto</h4>
+            <p id="modalDescription">A descrição detalhada vai aparecer aqui...</p>
+        </div>
+    </div>
+
+    <footer id="bottom"><h1>@2026 Henrique Paes. Todos os direitos reservados.</h1></footer>
+    </main>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
